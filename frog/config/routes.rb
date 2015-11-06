@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
-  # get 'welcome/index'
+  get 'froggame/game'
 
+  # get 'welcome/index'
+  get 'froggame/start' => 'froggame#start'
 
 
   # The priority is based upon order of creation: first created -> highest priority.
