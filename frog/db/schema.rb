@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20151106155659) do
 
   create_table "can_frogs", force: :cascade do |t|
     t.string   "name"
-    t.string   "color"
+    t.integer  "points"
     t.integer  "tongue_length"
     t.string   "species"
     t.datetime "created_at",    null: false
