@@ -1,0 +1,24 @@
+<h1>Create a Canonical Frog!</h1>
+
+<%= form_for @can_frog do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :species %><br>
+    <%= f.select :species, [['canonical'], ['bubble'], ['bull'], ['tree'], ['poison dart']]  %>
+  </p>
+
+  <p>
+    <%= f.label :tongue_length %><br>
+    <%= f.number_field :tongue_length, min: 0, max: 20 %>
+  <p>
+
+  <p>
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+    <%= f.submit %>
+  </p>
+<% end %>
