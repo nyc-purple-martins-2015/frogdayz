@@ -7,7 +7,7 @@ class CanFrogsController < ApplicationController
   def create
     @can_frog = CanFrog.new(frog_params)
     if @can_frog.save
-      redirect_to '/'
+      redirect_to "/can_frogs/#{@can_frog.id}"
     else
       render :new
     end
@@ -15,8 +15,10 @@ class CanFrogsController < ApplicationController
   end
 
   def show
-    binding.pry
+    # byebug
     @can_frog = CanFrog.find(params[:id])
+    @species = @can_frog.species
+    render :show
   end
 
     private

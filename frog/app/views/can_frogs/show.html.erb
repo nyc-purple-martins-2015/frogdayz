@@ -1,0 +1,21 @@
+<% if @species == "canonical" %>
+  <p>You are a Canonical Frog!</p>
+  <%= link_to image_tag("canon.jpg") %>
+<% elsif @species == "tree" %>
+  <p>You are a Tree Frog!</p>
+  <%= link_to image_tag("chilean_tree_frog.png") %>
+<% elsif @species == "poison dart" %>
+  <p>You are a Poison Dart Frog!</p>
+  <%= link_to image_tag("POISONDARTFROG.png") %>
+<% elsif @species == "bull" %>
+  <p>You are a Bull Frog!</p>
+  <%= link_to image_tag("frog-cartoon-hi.png") %>
+<% elsif @species == "tree" %>
+  <p>You are a Tree Frog!</p>
+  <%= link_to image_tag("tree-frog.png") %>
+<% elsif @species == "bubble" %>
+  <p>You are a Bubble Frog!</p>
+  <%= link_to image_tag("Kermit_the_Frog.png") %>
+<% end %>
+
+<h3>Your mission is to eat all the pesky flies at the pond. Good luck on your feast.</h3>
