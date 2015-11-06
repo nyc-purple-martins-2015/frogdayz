@@ -3,5 +3,7 @@ class FroggameController < ApplicationController
   end
 
   def start
+    render :file => 'froggame/start', layout: false
+    # <%= render :file => 'layouts/_header' %>
   end
 end
