@@ -12,7 +12,9 @@ Rails.application.routes.draw do
 
 
   # Example of regular route:
-    get 'can_frog/new' => 'can_frog#new'
+  resources :can_frogs, only: [:new, :create, :show]
+    # get 'can_frog/new' => 'can_frog#new'
+    # post '/can_frog' => 'can_frog#create'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
