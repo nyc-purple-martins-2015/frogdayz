@@ -1,7 +1,29 @@
 // You are a frog and you hop across lilly pads eating status 400-500 errors
 
 // accumulate points per error eaten
+var Pond = function(){
+  this.spaces = [["","","","",""],["","frog","","",""],["jared","","","",""],["","","","",""],["","","","",""]];
+};
 
+var Player= function(){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// HTML movement functions
 var moveUp = function(){
   var curPos = $(".frog");
   var cellIndex = curPos.parent().index();
@@ -66,7 +88,4 @@ var ifJared = function(newPos){
   var posJared = $(".jared-fly");
   return newPos === posJared;
 }
-var Pond = function(){
-  this.spaces = [["","","","",""],["","","","",""],["","","","",""],["","","","",""],["","","","",""]];
 
-};
